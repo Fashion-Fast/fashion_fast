@@ -3,7 +3,13 @@ import 'screens/login_screen.dart';
 import 'screens/store_home_screen.dart';
 
 import 'screens/drive_home_screen.dart';
+import 'screens/login_screen.dart';
+import 'screens/store_home_screen.dart';
 import 'screens/shopper_main_screen.dart';
+import 'screens/sign_up_screen.dart';
+import 'screens/my_cart_screen.dart';
+import 'screens/checkout_screen.dart';
+import 'screens/onboarding_screen.dart';
 
 void main() {
   
@@ -22,10 +28,13 @@ class FashionFastApp extends StatelessWidget {
         fontFamily: 'Helvetica',
         scaffoldBackgroundColor: Colors.white,
       ),
-     home: const LoginScreen(),
-      routes: 
-'/shop': (context) => const ShopperMainScreen(),
-                '/drive': (context) => const DriveHomeScreen(),
-        '/owner': (context) => const StoreHomeScreen(),
-  }
-}
+   home: const OnboardingScreen(),
+routes: {
+  '/login': (context) => const LoginScreen(),
+  '/signup': (context) => const SignUpScreen(),
+  '/shop': (context) => const ShopperMainScreen(),
+  '/drive': (context) => const DriveHomeScreen(),
+  '/owner': (context) => const StoreHomeScreen(),
+  '/cart': (context) => const MyCartScreen(),
+  '/checkout': (context) => const CheckoutScreen(),
+},
