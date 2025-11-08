@@ -9,6 +9,7 @@ import 'screens/sign_up_screen.dart';
 import 'screens/my_cart_screen.dart';
 import 'screens/checkout_screen.dart';
 import 'screens/onboarding_screen.dart';
+import 'screens/product_detail_screen.dart';
 
 void main() {
   
@@ -36,4 +37,5 @@ routes: {
   '/owner': (context) => const StoreHomeScreen(),
   '/cart': (context) => const MyCartScreen(),
   '/checkout': (context) => const CheckoutScreen(),
+      '/product': (context) => const ProductDetailScreen(),
 },
