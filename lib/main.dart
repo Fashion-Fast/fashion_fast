@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
 import 'screens/store_home_screen.dart';
-import 'screens/shop_screen.dart';
-import 'screens/drive_home_screen.dart';
 
+import 'screens/drive_home_screen.dart';
+import 'screens/shopper_main_screen.dart';
 
 void main() {
+  
   runApp(const FashionFastApp());
 }
 
@@ -23,7 +24,7 @@ class FashionFastApp extends StatelessWidget {
       ),
      home: const LoginScreen(),
       routes: 
-        '/shop': (context) => const ShopScreen(),
+'/shop': (context) => const ShopperMainScreen(),
                 '/drive': (context) => const DriveHomeScreen(),
         '/owner': (context) => const StoreHomeScreen(),
   }
