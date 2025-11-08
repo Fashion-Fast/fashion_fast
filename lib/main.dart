@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'screens/splash_screen.dart';
+import 'screens/login_screen.dart';
+import 'screens/store_home_screen.dart';
 import 'screens/shop_screen.dart';
-import 'screens/drive_home_screen.dart'; // ✅ Keep this only
+import 'screens/drive_home_screen.dart';
+
 
 void main() {
   runApp(const FashionFastApp());
@@ -19,11 +21,10 @@ class FashionFastApp extends StatelessWidget {
         fontFamily: 'Helvetica',
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: const SplashScreen(),
-      routes: {
+     home: const LoginScreen(),
+      routes: 
         '/shop': (context) => const ShopScreen(),
-        '/drive': (context) => const DriveHomeScreen(), // ✅ Now uses correct screen
-      },
-    );
+                '/drive': (context) => const DriveHomeScreen(),
+        '/owner': (context) => const StoreHomeScreen(),
   }
 }
