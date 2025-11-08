@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'shop_screen.dart';
+import 'home_screen.dart';
+
 
 class ShopperMainScreen extends StatefulWidget {
   const ShopperMainScreen({Key? key}) : super(key: key);
@@ -12,7 +14,7 @@ class _ShopperMainScreenState extends State<ShopperMainScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    const ShopScreen(),
+    const HomeScreen(),
     const OrdersScreen(),
     const ProfileScreen(),
   ];
