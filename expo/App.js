@@ -9,6 +9,9 @@ import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
 import HomeScreen from './screens/HomeScreen';
 import ProductDetailScreen from './screens/ProductDetailScreen';
+import CartScreen from './screens/CartScreen';
+import CheckoutScreen from './screens/CheckoutScreen';
+import ProfileScreen from './screens/ProfileScreen';
 // Future screens can be added here
 
 const Stack = createNativeStackNavigator();
@@ -35,9 +38,8 @@ function ShopperTabs() {
       })}
     >
       <Tab.Screen name="Home" component={HomeScreen} />
-      {/* Placeholder components for other tabs */}
-      <Tab.Screen name="Cart" component={HomeScreen} />
-      <Tab.Screen name="Profile" component={HomeScreen} />
+      <Tab.Screen name="Cart" component={CartScreen} />
+      <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
   );
 }
@@ -51,7 +53,8 @@ export default function App() {
         <Stack.Screen name="SignUp" component={SignUpScreen} />
         <Stack.Screen name="ShopperTabs" component={ShopperTabs} />
         <Stack.Screen name="ProductDetail" component={ProductDetailScreen} />
-        {/* Additional screens like ProductDetail can be added here */}
+        <Stack.Screen name="Checkout" component={CheckoutScreen} />
+        {/* Additional screens like Checkout or future pages can be added here */}
       </Stack.Navigator>
     </NavigationContainer>
   );
